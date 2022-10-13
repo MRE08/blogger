@@ -1,0 +1,7 @@
+<h1>Create your Blog</h1>
+<form method="POST" enctype = "multipart/form-data">
+    {% csrf_token %}
+    {{form|safe}}<br>
+    {{form.media}}<br>
+    <input type="submit" value="Create">
+</form>
